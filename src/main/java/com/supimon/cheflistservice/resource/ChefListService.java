@@ -1,6 +1,7 @@
 package com.supimon.cheflistservice.resource;
 
 import com.supimon.cheflistservice.models.ChefItem;
+import com.supimon.cheflistservice.models.ChefListWrapper;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +14,7 @@ import java.util.List;
 public class ChefListService {
 
     @RequestMapping("/{filter}")
-    public List<ChefItem> getChefs(@PathVariable("filter") String filter){
+    public ChefListWrapper getChefs(@PathVariable("filter") String filter){
 
         List<ChefItem> chefs = Arrays.asList(
 
@@ -58,6 +59,9 @@ public class ChefListService {
                         15)
         );
 
-        return chefs;
+        ChefListWrapper chefListWrapper = new ChefListWrapper();
+        chefListWrapper.setChefItems(chefs);
+
+        return chefListWrapper;
     }
 }
