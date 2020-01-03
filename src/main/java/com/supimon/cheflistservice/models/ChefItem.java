@@ -6,19 +6,13 @@ public class ChefItem {
     private String name;
     private String imgUrl;
     private String skills;
-    private int recommendations;
-    private double rating;
-    private boolean verified;
     private int experience;
 
-    public ChefItem(String chefId, String name, String imgUrl, String skills, int recommendations, double rating, boolean verified, int experience) {
+    public ChefItem(String chefId, String name, String imgUrl, String skills, int experience) {
         this.chefId = chefId;
         this.name = name;
         this.imgUrl = imgUrl;
         this.skills = skills;
-        this.recommendations = recommendations;
-        this.rating = rating;
-        this.verified = verified;
         this.experience = experience;
     }
 
@@ -52,30 +46,6 @@ public class ChefItem {
 
     public void setSkills(String skills) {
         this.skills = skills;
-    }
-
-    public int getRecommendations() {
-        return recommendations;
-    }
-
-    public void setRecommendations(int recommendations) {
-        this.recommendations = recommendations;
-    }
-
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
-    public boolean isVerified() {
-        return verified;
-    }
-
-    public void setVerified(boolean verified) {
-        this.verified = verified;
     }
 
     public int getExperience() {

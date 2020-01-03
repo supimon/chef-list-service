@@ -23,40 +23,28 @@ public class ChefListService {
                         "Bhajan Singh",
                         "https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg",
                         "chinese, indian, american",
-                        10,
-                        4.5,
-                        true,
-                        12),
+                        10),
 
                 new ChefItem(
                         "5678",
                         "Karan Singh",
                         "https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg",
                         "south-indian, north-indian",
-                        6,
-                        3,
-                        true,
-                        5),
+                        6),
 
                 new ChefItem(
                         "2222",
                         "Puran Singh",
                         "https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg",
                         "american, italian",
-                        15,
-                        5,
-                        false,
-                        5),
+                        15),
 
                 new ChefItem(
                         "3333",
                         "Pie Singh",
                         "https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg",
                         "Thai, Korean, Japanese",
-                        23,
-                        3,
-                        true,
-                        15)
+                        23)
         );
 
         ChefListWrapper chefListWrapper = new ChefListWrapper();
