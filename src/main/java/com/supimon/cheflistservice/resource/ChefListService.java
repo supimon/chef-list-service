@@ -1,6 +1,7 @@
 package com.supimon.cheflistservice.resource;
 
 import com.supimon.cheflistservice.models.ChefItem;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,7 +12,8 @@ import java.util.List;
 @RequestMapping("/chef-listing")
 public class ChefListService {
 
-    public List<ChefItem> getChefs(String filter){
+    @RequestMapping("/{chefId}")
+    public List<ChefItem> getChefs(@PathVariable("chefId") String filter){
         return Collections.singletonList(
           new ChefItem(
                   "1234",
