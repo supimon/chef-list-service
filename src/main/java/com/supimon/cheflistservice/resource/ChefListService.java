@@ -39,6 +39,7 @@ public class ChefListService {
 
         Firestore db = FirestoreClient.getFirestore();
 
+        // https://firebase.google.com/docs/firestore/quickstart
         // asynchronously retrieve all users
         ApiFuture<QuerySnapshot> query = db.collection("chef-details").get();
         // query.get() blocks on response
